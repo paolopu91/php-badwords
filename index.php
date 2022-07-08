@@ -34,10 +34,11 @@ echo "Sostituisci con *** se contiene la parola <strong>morte<strong>";
 echo "<br>";
 
 if(stripos($paragrafo, "morte") !== false){
-    $paragrafo = str_replace("morte", "***", $paragrafo);
+    $paragrafo = str_replace($word, "***", $paragrafo);
 }
 //dichiaro qui la lunghezza del mio nuovo paragrafo perchè se la dichiaro in cima mi prende la lunghezza del paragrafo originale senza la parola occultata
 $lunghezzaParagrafo ="Lunghezza del mio paragrafo : " . strlen($paragrafo);
+
  ?>
 
 
